@@ -7,12 +7,12 @@
 </div>
 
 {{#each boards}}
-<div class="px-6 pb-10 max-w-7xl mx-auto">
-
+<div class="px-6 pb-3 max-w-7xl mx-auto">
     <h3 class="text-xl font-black uppercase tracking-tight mb-5 border-l-[6px] border-black pl-3">{{this.name}}</h3>
+</div>
 
-    <div class="kanban-board">
-        <div class="kanban-lists" data-board-id="{{this.id}}">
+<div class="kanban-board pb-10">
+    <div class="kanban-lists" data-board-id="{{this.id}}">
 
             {{#each this.lists}}
             <div class="kanban-list" data-list-id="{{this.id}}" data-board-id="{{../id}}">
@@ -214,6 +214,5 @@
             {{/each}}
 
         </div>
-    </div>
 </div>
 {{/each}}
